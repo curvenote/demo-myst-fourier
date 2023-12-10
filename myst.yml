@@ -1,0 +1,51 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  title: Exploring Fourier Series Expansions
+  description: A collection of interactive figures and notebooks exploring the behaviour of Fourier Series expansions of various signals
+  venue: MyST Articles
+  subject: Interactive Demo
+  open_access: true
+  license:
+    content: CC-BY-4.0
+    code: MIT
+  date: 2023-12-10
+  keywords:
+    - fourier series
+    - interactive
+    - signal processing
+  authors:
+    - name: Steve Purves
+      orcid: 0000-0002-0760-5497
+      corresponding: true
+      email: steve@curvenote.com
+      roles:
+        - Software
+        - Visualization
+      affiliations:
+        - Curvenote
+  github: https://github.com/stevejpurves/demo-myst-fouier
+  # bibliography: []
+  banner: banner.png
+  jupyter:
+    server:
+      url: http://localhost:8888
+      token: test-secret
+  requirements:
+    - requirements.txt
+  exports:
+    - format: pdf
+      article: article.md
+      output: article.pdf
+      template: curvenote
+      # The following are template-specific options
+site:
+  template: article-theme
+  title: Fourier Series
+  # options:
+  #   logo: site_logo.png
+  nav: []
+  actions:
+    - title: Learn More
+      url: https://mystmd.org/guide
+  domains: []
